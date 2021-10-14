@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q & A Section</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <section class="questions">
+        <!-- title -->
+        <div class="title">
+          <h2>Vanilla JavaScript questions answered</h2>
+        </div>
+        <!-- questions -->
+        <div class="section-center">
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <p>How can JavaScript be used to improve accessibility on the web?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p>
+                A common way to assist users is to provide useful focus management. A calendar, for example, should be able to cycle through days using the arrow keys, with up and down keys skipping a week at a time. It is just a case of listening for keyboard events while focus is within that component.
+
+
+                Important data changing as a result of JavaScript, for example form feedback, should also be announced for screen readers. Often this is achieved by marking up a container as a live region. </p>
+            </div>
+          </article>
+          <!-- end of single question -->
+         
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <p>What does the term 'hoisting' mean in reference to JavaScript?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p>
+                JavaScript is unique in that it does not need compiling before being distributed. A browser will compile scripts as it finds them and make notes of any functions and variables that are declared within. 
+
+                The browser then makes a second pass to execute the code, knowing where these functions and variables apply. As a block is executed, its function and variable declarations are 'hoisted' to the top of the block.      </div>
+          </article>
+          <!-- end of single question -->
+
+          <!-- single question -->
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <p>What is the difference between an arrow function and a regular function?</p>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon">
+                    <i class="far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon">
+                    <i class="far fa-minus-square"></i>
+                  </span>
+                </button>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                  <p>
+                    The key difference, despite being shorter to write, is that arrow functions do not create their own value for 'this'. They will instead use the value of the enclosing block. In the above example, this would log out 1, 2, 3, etc once every second. With a regular function, this.x would be undefined, so it would log NaN. The body of an arrow function is assumed to be the return value from it. This makes them useful for promises, where values are passed through. Regular functions must explicitly return a value, or will return undefined.
+                  </p>
+              </div>
+            </article>
+          <!-- end of single question -->
+      
+        </section>
+    </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
